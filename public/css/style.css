@@ -41,7 +41,10 @@ a {
   width: 100%;
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-image: url('../images/hero_1.jpg');
+  position: fixed;
+}
 
 .site-navbar {
   margin-bottom: 0px;
