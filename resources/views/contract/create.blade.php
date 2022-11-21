@@ -20,46 +20,46 @@
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                         <label>Umowa dotyczy</label>
-                        <input class="form-control" id="total" name="total" type="text" placeholder="Proszę wprowadzić kwotę faktury"/>
+                        <input class="form-control" id="contract_applies" name="contract_applies" type="text" placeholder="Umowa dotyczy..."/>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Numer faktury</label>
-                        <input class="form-control" id="number" name="number" type="text" placeholder="Proszę wprowadzić numer faktury"/>
+                        <label>Data zawarcia umowy</label>
+                        <input class="form-control" id="date_conclusion_contract" name="date_conclusion_contract" type="date" placeholder="Proszę wprowadzić dataę zawarcia umowy"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Numer faktury</label>
-                        <input class="form-control" id="number" name="number" type="text" placeholder="Proszę wprowadzić numer faktury"/>
+                        <label>Data realizacji</label>
+                        <input class="form-control" id="execution_date" name="execution_date" type="date" placeholder="Proszę wprowadzić datę realizacji umowy"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Numer faktury</label>
-                        <input class="form-control" id="number" name="number" type="text" placeholder="Proszę wprowadzić numer faktury"/>
+                        <label>Data wygaśnięcia</label>
+                        <input class="form-control" id="contract_expiration_date" name="contract_expiration_date" type="date" placeholder="Proszę wprowadzić datę wygaśnięcia umowy"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Numer faktury</label>
-                        <input class="form-control" id="number" name="number" type="text" placeholder="Proszę wprowadzić numer faktury"/>
+                        <label>Uwagi</label>
+                        <input class="form-control" id="remarks" name="remarks" type="text" placeholder="Uwagi jak są..."/>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Numer faktury</label>
-                        <input class="form-control" id="number" name="number" type="text" placeholder="Proszę wprowadzić numer faktury"/>
+                        <label>Aneks</label>
+                        <input class="form-control" id="annex" name="annex" type="text" placeholder="Aneks do umowy..."/>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Numer faktury</label>
-                        <input class="form-control" id="number" name="number" type="text" placeholder="Proszę wprowadzić numer faktury"/>
+                        <label>Skan</label>
+                        <input class="form-control" id="scan" name="scan" type="text" placeholder="Scan dokumentu - pdf"/>
                     </div>
                 </div>
-                <div class="form-group"><button class="btn btn-primary" type="submit" >Dodaj fakturę</button></div>
+                <div class="form-group"><button class="btn btn-primary" type="submit" >Dodaj umowę</button></div>
             </form>    
         </div>
     </div>

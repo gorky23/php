@@ -80,8 +80,8 @@
                 <li class="has-children">
                     <a href="{{ url('/') }}"><span>Sekretariat</span></a>
                     <ul class="dropdown arrow-top">
-                      <li><a href="{{ url('/faktury') }}">Umowy</a></li>
-                      <li><a href="{{ url('/faktury/dodaj') }}">Dodaj umowę</a></li>
+                      <li><a href="{{ url('/umowy') }}">Umowy</a></li>
+                      <li><a href="{{ url('/umowy/dodaj') }}">Dodaj umowę</a></li>
                       <li><a href="#">Menu Three</a></li>
                       <li class="has-children">
                         <a href="#">Dropdown</a>

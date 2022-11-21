@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Contract;
 use Illuminate\Http\Request;
 
 class ContractController extends Controller
@@ -27,9 +27,15 @@ class ContractController extends Controller
     public function store(Request $request)
     {
         $contract = new Contract();
-        $contract->number = $request->number;
-        $contract->date = $request->date;
-        $contract->total = $request->total;
+        $contract->contract_number = $request->contract_number;
+        $contract->contractor = $request->contractor;
+        $contract->contract_applies = $request->contract_applies;
+        $contract->date_conclusion_contract = $request->date_conclusion_contract;
+        $contract->execution_date = $request->execution_date;
+        $contract->contract_expiration_date = $request->contract_expiration_date;
+        $contract->remarks = $request->remarks;
+        $contract->annex = $request->annex;
+        $contract->scan = $request->scan;
 
         $contract->save();
         return redirect()->route('contracts.index')->with('message', 'Umowa dodana poprawnie');
@@ -39,9 +45,15 @@ class ContractController extends Controller
     {
         $contract = Contract::find($id);
 
-        $contract->number = $request->number;
-        $contract->date = $request->date;
-        $contract->total = $request->total;
+        $contract->contract_number = $request->contract_number;
+        $contract->contractor = $request->contractor;
+        $contract->contract_applies = $request->contract_applies;
+        $contract->date_conclusion_contract = $request->date_conclusion_contract;
+        $contract->execution_date = $request->execution_date;
+        $contract->contract_expiration_date = $request->contract_expiration_date;
+        $contract->remarks = $request->remarks;
+        $contract->annex = $request->annex;
+        $contract->scan = $request->scan;
 
         $contract->save();
         return redirect()->route('contracts.index')->with('message', 'Umowa zmieniona poprawnie');
