@@ -28,9 +28,9 @@ Route::put('/faktury/zmien/{id}', [InvoicesController::class, 'update'])->name('
 Route::delete('/faktury/usun/{id}', [InvoicesController::class, 'delete'])->name('invoices.delete');
 
 # Umowy
-Route::get('/umowy', [ContractController::class, 'index'])->name('contracts.index');
-Route::get('/umowy/dodaj', [ContractController::class, 'create'])->name('contracts.create');
-Route::post('/umowy/zapisz', [ContractController::class, 'store'])->name('contracts.store');
-Route::get('/umowy/edytuj/{id}', [ContractController::class, 'edit'])->name('contracts.edit');
-Route::put('/umowy/zmien/{id}', [ContractController::class, 'update'])->name('contracts.update');
-Route::delete('/umowy/usun/{id}', [ContractController::class, 'delete'])->name('contracts.delete');
+Route::get('/umowy', [ContractController::class, 'index'])->name('contract.index');
+Route::get('/umowy/dodaj', [ContractController::class, 'create'])->name('contract.create');
+Route::post('/umowy/zapisz', [ContractController::class, 'store'])->name('contract.store');
+Route::get('/umowy/edytuj/{id}', [ContractController::class, 'edit'])->name('contract.edit');
+Route::put('/umowy/zmien/{id}', [ContractController::class, 'update'])->name('contract.update');
+Route::delete('/umowy/usun/{id}', [ContractController::class, 'delete'])->name('contract.delete');

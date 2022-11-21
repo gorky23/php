@@ -25,6 +25,7 @@
                     <th scope="col">Uwagi</th>
                     <th scope="col">Aneks</th>
                     <th scope="col">Skan</th>
+                    <th scope="col">Akcje</th>
                   </tr>
                 </thead>
                 <tbody class="table-group-divider">
@@ -40,8 +41,8 @@
                         <td>{{ $contract->remarks }}</td>
                         <td>{{ $contract->annex }}</td>
                         <td>{{ $contract->scan }}</td>
-                        <td><div class="btn-group"><a href="{{ route('contracts.edit', ['id' => $contract->id]) }}" class="btn btn-primary btn-sm" style="margin-right: 3px;">Edytuj</a>
-                            <form method="POST" action="{{ route('contracts.delete', ['id' => $contract->id]) }}">
+                        <td><div class="btn-group"><a href="{{ route('contract.edit', ['id' => $contract->id]) }}" class="btn btn-primary btn-sm" style="margin-right: 3px;">Edytuj</a>
+                            <form method="POST" action="{{ route('contract.delete', ['id' => $contract->id]) }}">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger btn-sm">Usuń</button>

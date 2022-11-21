@@ -21,7 +21,7 @@ class ContractController extends Controller
     {
         $contract = Contract::find($id);
 
-        return view('contracts.edit', ['contract' => $contract]);
+        return view('contract.edit', ['contract' => $contract]);
     }
 
     public function store(Request $request)
@@ -56,13 +56,13 @@ class ContractController extends Controller
         $contract->scan = $request->scan;
 
         $contract->save();
-        return redirect()->route('contracts.index')->with('message', 'Umowa zmieniona poprawnie');
+        return redirect()->route('contract.index')->with('message', 'Umowa zmieniona poprawnie');
     }
 
     public function delete($id)
     {
         Contract::destroy($id);
 
-        return redirect()->route('contracts.index')->with('message', 'Umowa została usunięta');
+        return redirect()->route('contract.index')->with('message', 'Umowa została usunięta');
     }
 }

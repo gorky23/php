@@ -49,7 +49,7 @@
                     <li><a href="{{ url('/faktury') }}">Lista faktur</a></li>
                     <li><a href="{{ url('/faktury/dodaj') }}">Dodaj fakturę</a></li>
                     <li><a href="#">Menu Three</a></li>
-                    <li class="has-children">
+                    {{-- <li class="has-children">
                       <a href="#">Dropdown</a>
                       <ul class="dropdown">
                         <li><a href="#">Menu One</a></li>
@@ -57,7 +57,7 @@
                         <li><a href="#">Menu Three</a></li>
                         <li><a href="#">Menu Four</a></li>
                       </ul>
-                    </li>
+                    </li> --}}
                   </ul>
                 </li>
                 <li class="has-children">
@@ -66,7 +66,7 @@
                       <li><a href="{{ url('/faktury') }}">Gotówka</a></li>
                       <li><a href="{{ url('/faktury/dodaj') }}">Przelewy</a></li>
                       <li><a href="#">Menu Three</a></li>
-                      <li class="has-children">
+                      {{-- <li class="has-children">
                         <a href="#">Dropdown</a>
                         <ul class="dropdown">
                           <li><a href="#">Menu One</a></li>
@@ -74,7 +74,7 @@
                           <li><a href="#">Menu Three</a></li>
                           <li><a href="#">Menu Four</a></li>
                         </ul>
-                      </li>
+                      </li> --}}
                     </ul>
                 </li>
                 <li class="has-children">
@@ -83,7 +83,7 @@
                       <li><a href="{{ url('/umowy') }}">Umowy</a></li>
                       <li><a href="{{ url('/umowy/dodaj') }}">Dodaj umowę</a></li>
                       <li><a href="#">Menu Three</a></li>
-                      <li class="has-children">
+                      {{-- <li class="has-children">
                         <a href="#">Dropdown</a>
                         <ul class="dropdown">
                           <li><a href="#">Menu One</a></li>
@@ -91,7 +91,7 @@
                           <li><a href="#">Menu Three</a></li>
                           <li><a href="#">Menu Four</a></li>
                         </ul>
-                      </li>
+                      </li> --}}
                     </ul>
                 </li>
                 {{--  <li><a href="listings.html"><span>Listings</span></a></li>

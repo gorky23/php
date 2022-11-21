@@ -33,7 +33,7 @@
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                         <label>Data realizacji</label>
-                        <input value={{ $invoice->execution_date }} class="form-control" id="execution_date" name="execution_date" type="date" placeholder="Proszę wprowadzić datę realizacji umowy"/>
+                        <input value={{ $contract->execution_date }} class="form-control" id="execution_date" name="execution_date" type="date" placeholder="Proszę wprowadzić datę realizacji umowy"/>
                     </div>
                 </div>
                 <div class="control-group">
