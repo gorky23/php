@@ -28,18 +28,18 @@
                   </tr>
                 </thead>
                 <tbody class="table-group-divider">
-                    @foreach ( $invoices as $invoice)
+                    @foreach ( $contracts as $contract)
                     <tr>
-                        <th scope="row">{{ $invoice->id }}</th>
-                        <td>{{ $invoice->contract_number }}</td>
-                        <td>{{ $invoice->contractor }}</td>
-                        <td>{{ $invoice->contract_applies }}</td>
-                        <td>{{ $invoice->date_conclusion_contract }}</td>
-                        <td>{{ $invoice->execution_date }}</td>
-                        <td>{{ $invoice->contract_expiration_date }}</td>
-                        <td>{{ $invoice->remarks }}</td>
-                        <td>{{ $invoice->annex }}</td>
-                        <td>{{ $invoice->scan }}</td>
+                        <th scope="row">{{ $contract->id }}</th>
+                        <td>{{ $contract->contract_number }}</td>
+                        <td>{{ $contract->contractor }}</td>
+                        <td>{{ $contract->contract_applies }}</td>
+                        <td>{{ $contract->date_conclusion_contract }}</td>
+                        <td>{{ $contract->execution_date }}</td>
+                        <td>{{ $contract->contract_expiration_date }}</td>
+                        <td>{{ $contract->remarks }}</td>
+                        <td>{{ $contract->annex }}</td>
+                        <td>{{ $contract->scan }}</td>
                         <td><div class="btn-group"><a href="{{ route('contracts.edit', ['id' => $contract->id]) }}" class="btn btn-primary btn-sm" style="margin-right: 3px;">Edytuj</a>
                             <form method="POST" action="{{ route('contracts.delete', ['id' => $contract->id]) }}">
                                 @csrf

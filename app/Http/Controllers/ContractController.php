@@ -9,12 +9,12 @@ class ContractController extends Controller
     public function index()
     {
         $contracts = Contract::all();
-        return view('contracts.index', ['contracts' => $contracts]);
+        return view('contract.index', ['contracts' => $contracts]);
     }
 
     public function create()
     {
-        return view('contracts.create');
+        return view('contract.create');
     }
 
     public function edit($id)
@@ -38,7 +38,7 @@ class ContractController extends Controller
         $contract->scan = $request->scan;
 
         $contract->save();
-        return redirect()->route('contracts.index')->with('message', 'Umowa dodana poprawnie');
+        return redirect()->route('contract.index')->with('message', 'Umowa dodana poprawnie');
     }
 
     public function update($id, Request $request)

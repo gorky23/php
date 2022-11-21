@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container d-flex justify-content-center pt-5" style="margin-top: 40px;">
+    <div class="container d-flex justify-content-center pt-1" style="margin-top: 40px;">
         <div class="col-6 mt-5" style="border-radius: 5px; background-color: #f2f2f2; padding: 40px; opacity: 0.8;">
-            <h1>Dodaj Fakturę</h1>
-            <form action="{{ route('invoices.store') }}" method="POST" id="contactForm" name="sentMessage" novalidate="novalidate">
+            <h1>Dodaj Umowę</h1>
+            <form action="{{ route('contract.store') }}" method="POST" id="contactForm" name="sentMessage" novalidate="novalidate">
                 {{ csrf_field() }}
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
@@ -20,13 +20,13 @@
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                         <label>Umowa dotyczy</label>
-                        <input class="form-control" id="contract_applies" name="contract_applies" type="text" placeholder="Umowa dotyczy..."/>
+                        <input class="form-control" id="contract_applies" name="contract_applies" type="text" placeholder="Czego umowa dotyczy"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                         <label>Data zawarcia umowy</label>
-                        <input class="form-control" id="date_conclusion_contract" name="date_conclusion_contract" type="date" placeholder="Proszę wprowadzić dataę zawarcia umowy"/>
+                        <input class="form-control" id="date_conclusion_contract" name="date_conclusion_contract" type="date" placeholder="Proszę wprowadzić datę zawarcia umowy"/>
                     </div>
                 </div>
                 <div class="control-group">
