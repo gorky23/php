@@ -10,7 +10,7 @@
                     <th scope="col">id</th>
                     <th scope="col">Email</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Akcje</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -19,7 +19,7 @@
                     <th scope="row">{{ $user->id }}</th>
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->name }}</td>
-                    <td>@mdo</td>
+                    <td>-</td>
                 </tr>
                 @endforeach
                 </tbody>

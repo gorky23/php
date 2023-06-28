@@ -12,8 +12,9 @@ class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
+     * @return Application|Factory|View
      */
-    public function index(): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
+    public function index(): View|Factory|Application
     {
         return view('users.index', [
             'users' => User::all()
