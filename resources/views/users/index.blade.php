@@ -11,6 +11,7 @@
                     <th scope="col">Email</th>
                     <th scope="col">Name</th>
                     <th scope="col">Surname</th>
+                    <th scope="col">Phone number</th>
                     <th scope="col">Akcje</th>
                 </tr>
                 </thead>
@@ -22,6 +23,7 @@
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->surname }}</td>
                     <td>{{ $user->phone_number }}</td>
+                    <td><button class="btn btn-danger btn-sm delete" data-id="{{ $user->id }}">X</button></td>
                 </tr>
                 @endforeach
                 </tbody>
@@ -29,3 +31,12 @@
         </div>
     </div>
 @endsection
+@section('javascript')
+    $(function() {
+        $('.delete').click(function() {
+            console.log($(this).data("id"));
+            //alert('Czy napewno chcesz usunąć!!!');
+        });
+    });
+@endsection
+
